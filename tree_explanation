@@ -1,0 +1,26 @@
+DRAWTREE(2, 10):
+    Forward(Size=10)
+    MoveLeft(30_DEGREES)
+    DRAWTREE(1, 5):
+        Forwards(Size=5)
+        MoveLeft(30_DEGREES)
+        DRAWTREE(0, 5):
+            DO Nothing
+        MoveRight(30_DEGREES*2)
+        DRAWTREE(0,5):
+            DO Nothing
+        MoveLeft(30_DEGREES)
+        MoveBack(5)
+    MoveRight(2*30_DEGREES)
+    DRAWTREE(1,5):
+        Forward(Size=5)
+        MoveLEft(30_DEGREES)
+        DRAWTREE(0, 5):
+            DO Nothing
+        MoveRight(30_DEGREES*2)
+        DRAWTREE(0,5):
+            DO Nothing
+        MoveLeft(30_DEGREES)
+        MoveBack(5)
+    MoveLeft(30_DEGREES)
+    MoveBack(10)
